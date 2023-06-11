@@ -8,10 +8,58 @@ body {
     font-family: 'Lato', 'Poppins', sans-serif;
 }
 .showcase-wrapper {
-    padding-top: 50%
+    height: 100vh;
 }
 .btn-quote {
-    padding: 8px 16px;
+    padding: 10px 74px;
     border: 2px solid red;
     border-radius: 30px;
+    font-size: 20px;
+    letter-spacing: 3px;;
+}
+.menu, .cross {
+    display: none;
+    cursor: pointer
+}
+.menu img{
+    width: 50px;
+    float: right;
+}
+.cross{
+    width: 50px;
+}
+@media screen and (max-width: 789px) {
+    .showcase-wrapper {
+        height: auto;
+    }
+    .navigation ul{
+        padding: 0;
+        list-style: none;
+    }
+    .navigation {
+        background: red;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        padding: 20px;
+        width: 50%;
+        transition: 0.5s;
+    }
+    .navigation li {
+        padding: 10px;
+    }
+    .active-nav {
+        margin-right: -1000px;
+        transition: 0.5s;
+    }
+    .menu, .cross {
+        display: block;
+    }
+    .cross {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+    
 }
