@@ -1,4 +1,7 @@
 import Header from './header';
+import OurClients from './ourClients';
+import Contact from './contact';
+import Footer from './footer';
 
 import black_building from './assets/img/black_building.jpg';
 
@@ -7,22 +10,22 @@ const App = () => {
 	return(
 		<>	<Header />
 			<div className='showcase-wrapper text-center p-3 p-md-5'>
-				<h1 className='display-2'>
+				<h1 className='display-2 text-light'>
 					Accounting Solutions You Can Trust.
 				</h1>
-				<p className='text-center h2 fw-normal p-4'>
+				<p className='text-center h2 fw-normal p-4 text-white'>
 					Whether you are an individual or a business, local or international, 
 					you need reliable and professional accounting services to manage your finances and taxes. 
 				</p>
-				<p className='h3 mb-5'>
+				<p className='h3 mb-5 text-primary'>
 					Expertise. Commitment. Value.
 				</p>
 				<button type='button' className='btn-quote text-uppercase'>Get a quote</button>
 			</div>
-			<section>
+			<section className='pt-5'>
 				<div className='container-fluid'>
 					<div className='row'>
-						<div className='col-md-4 p-3 text-md-center'>
+						<div className='col-md-4 p-5 text-md-center'>
 							<h4>
 								01 Tax Preparation.
 							</h4>
@@ -30,7 +33,7 @@ const App = () => {
 								We prepare everything you need for tax return.
 							</p>
 						</div>
-						<div className='col-md-4 p-3 text-md-center'>
+						<div className='col-md-4 p-5 text-md-center'>
 							<h4>
 								02 Startup Package.
 							</h4>
@@ -38,7 +41,7 @@ const App = () => {
 								We build financial models you can pitch to your investors.
 							</p>
 						</div>
-						<div className='col-md-4 p-3 text-md-center'>
+						<div className='col-md-4 p-5 text-md-center'>
 							<h4>
 								03 Wealth Management.
 							</h4>
@@ -50,9 +53,9 @@ const App = () => {
 				</div>
 			</section>
 
-			<section className='pt-5 pb-1'>
+			<section className='pt-5 '>
 				<div className='container'>
-					<div className='row no-gutters g-4'>
+					<div className='row no-gutters mb-2 g-4'>
 						<div className='col-md-4'>
 							<img src={ black_building } alt='black building' className='img-fluid rounded'/>
 						</div>
@@ -68,23 +71,121 @@ const App = () => {
 							</p>
 						</div>
 					</div>
-				</div>
-			</section>
-			<section>
-				<div className='container'>
-					<div className='row'>
-						<div className='col-md-10'>
-							<p className='h4 fw-normal'>
-								With us, you can focus on your core activities and goals, while we take care of your accounting needs. 
-								You can also enjoy peace of mind knowing that your financial records are in good hands and compliant with the relevant laws and regulations.
-							</p>
-						</div>
-						<div className='col-md-2 bg-black'>
-							
-						</div>
+					<div>
+						<p className='h4 fw-normal mb-3'>
+							With us, you can focus on your core activities and goals, while we take care of your accounting needs. 
+							You can also enjoy peace of mind knowing that your financial records are in good hands and compliant with the relevant laws and regulations.
+						</p>
 					</div>
 				</div>
 			</section>
+			<section className='pt-5 pb-5'>
+				<div className='container'>
+					<h3>
+						Services
+					</h3>
+					<p>
+						At werkn, we believe that accounting should be simple, transparent, and affordable. 
+						That’s why we offer flexible pricing plans that suit your needs and budget. 
+						You can choose from three plans:
+					</p>
+					<div className='row g-4'>
+						<div className='col-md-4'>
+							<div className='card shadow'>
+								<div className='card-body'>
+									<h4 className='card-title'>
+										Starter
+									</h4>
+									<p>
+										This plan is ideal for freelancers and sole traders who need basic accounting services. 
+										<span className='fw-semibold d-block'>For only R199 per month.</span> 
+										<span> 01. </span> you get access to our online accounting software, <br/>
+										<span> 02. </span> unlimited invoices and receipts, <br/>
+										<span> 03. </span> bank reconciliation, <br/>
+										<span> 04. </span> tax calculation, and <br/>
+										<span> 05. </span> quarterly financial reports.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div className='col-md-4'>
+							<div className='card shadow'>
+								<div className='card-body'>
+									<h4 className='card-title'>
+										Standard
+									</h4>
+									<p>
+										This plan is perfect for small businesses and non-profit organizations who need more comprehensive accounting services. 
+										<span className='fw-semibold d-block'>For only R399 per month.</span> 
+										<span> 01. </span> you get everything in the Starter plan, <br/>
+										<span> 02. </span> plus payroll and compliance, <br/>
+										<span> 03. </span> VAT filing, <br/>
+										<span> 04. </span> annual financial statements, <br/>
+										<span> 05. </span> and business advisory.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div className='col-md-4'>
+							<div className='card shadow'>
+								<div className='card-body'>
+									<h4 className='card-title'>
+										Premium
+									</h4>
+									<p>
+										This plan is designed for medium-sized businesses and organizations who need full-service accounting solutions. 
+										<span className='fw-semibold d-block'>For only R599 per month.</span>
+										 <span> 01. </span>you get everything in the Standard plan,<br/>
+										 <span> 02. </span>plus audit and assurance,<br/>
+										 <span> 03. </span>tax planning and optimization,<br/>
+										 <span> 04. </span>cash flow analysis,<br/>
+										 <span> 05. </span>and dedicated account manager.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div className='alert alert-info p-3 mt-3'>
+						#📝 All our plans come with a 🆓🗓️30-day free trial and no long-term contracts. You can cancel or change your plan anytime. 
+						You can also add extra services such as bookkeeping, consulting, or training for an additional fee.
+					</div>
+				</div>
+			</section>
+			<section className='pt-5 pb-5'>
+				<div className='container'>
+					<div className='text-center mb-4'>
+						<h3 className='text-uppercase'>Our testimonials</h3>
+						<p className=' h5 fw-normal'>
+							What <span className='h5'>Customers</span> say...
+						</p>
+					</div>
+					<div className='p-2'>
+						<OurClients />
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div className='container'>
+					<Contact />
+				</div>
+			</section>
+
+			<section className='pt-4 pb-4'>
+				<div className='container p-5 shadow rounded'>
+					<blockquote className='h5 fw-normal'>
+						"Accounting is our expertise. We'll take care for it, so you can focus on yours."
+					</blockquote>
+					<cite>
+						- ceo Martin Lightwood
+					</cite>
+				</div>
+			</section>
+
+			<footer className='pt-4 pb-4'>
+				<Footer />
+			</footer>
 		</>
 	);
 }
