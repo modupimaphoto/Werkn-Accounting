@@ -13,7 +13,7 @@ const OurClients = () => {
             They are always professional, responsive, and reliable. We highly recommend their services.`
         },
         {
-            name: "ohn Doe, Freelance Graphic Designer",
+            name: "John Doe, Freelance Graphic Designer",
             review: `I have been using Werkn for my freelance business for over a year now. 
             They have made my accounting so easy and stress-free. They handle everything from invoicing, expense tracking, to tax calculation. 
             They also provide me with valuable business advice and insights. 
@@ -51,7 +51,7 @@ const OurClients = () => {
                 <p className='h4 fw-light mb-3'>
                    { clients[reviewCount]['review'] }
                 </p>
-                <h6>
+                <h6 className="text-C">
                     { clients[reviewCount]['name'] }
                 </h6>
             </div>
