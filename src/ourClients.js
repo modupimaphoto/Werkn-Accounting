@@ -41,7 +41,7 @@ const OurClients = () => {
     }
     return(
         <>
-            <div className='width-60 p-5 m-auto shadow rounded text-center position-relative'>
+            <div className='width-60 p-5 m-auto shadow rounded text-center position-relative bg-white'>
                 <span className='arrow-left' onClick={ prevReview }>
                     <img src={ arrow_left} alt="arrow left"/>
                 </span>
