@@ -10,14 +10,14 @@ const App = () => {
 	return(
 		<>	<Header />
 			<div className='showcase-wrapper text-center p-3 p-md-5'>
-				<h1 className='display-2 text-light'>
-					Accounting Solutions You Can Trust.
+				<h1 className='display-3 text-light'>
+					Accounting Solutions You Can <span className='text-EG'>Trust.</span>
 				</h1>
-				<p className='text-center h2 fw-normal p-4 text-white'>
+				<p className='text-center h3 fw-normal p-4 text-white'>
 					Whether you are an individual or a business, local or international, 
 					you need reliable and professional accounting services to manage your finances and taxes. 
 				</p>
-				<p className='h3 mb-5 text-primary'>
+				<p className='h3 mb-5 slogan'>
 					Expertise. Commitment. Value.
 				</p>
 				<button type='button' className='btn-quote text-uppercase'>Get a quote</button>
@@ -60,7 +60,7 @@ const App = () => {
 							<img src={ black_building } alt='black building' className='img-fluid rounded'/>
 						</div>
 						<div className='col-md-8 p-3'>
-							<h2>About us</h2>
+							<h2 className='text-EG'>About us</h2>
 							<p className='h5 fw-light'>
 								Established in 2014, Werkn is full service firm, offering affordable 
 								accounting solutions to individuals and local and international businesses.
@@ -81,10 +81,10 @@ const App = () => {
 			</section>
 			<section className='pt-5 pb-5'>
 				<div className='container'>
-					<h3>
+					<h3 className='text-EG'>
 						Services
 					</h3>
-					<p className='h6 p-sm-2'>
+					<p className='h6 p-sm-2 mb-3'>
 						At werkn, we believe that accounting should be simple, transparent, and affordable.<br />
 						That’s why we offer flexible pricing plans that suit your needs and budget. <br />
 						<span className="text-C">You can choose from three plans:</span>
@@ -152,15 +152,15 @@ const App = () => {
 					</div>
 				</div>
 			</section>
-			<section className='pt-5 pb-5'>
+			<section className='pt-5 pb-5 bg-lightgray'>
 				<div className='container'>
 					<div className='text-center mb-4'>
-						<h3 className='text-uppercase'>Our testimonials</h3>
+						<h3 className='text-uppercase text-EG'>Our testimonials</h3>
 						<p className=' h5 fw-normal'>
 							What <span className='h5 text-C'>Customers</span> say...
 						</p>
 					</div>
-					<div className='p-2'>
+					<div className='p-2 mb-4'>
 						<OurClients />
 					</div>
 				</div>
