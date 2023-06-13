@@ -14,7 +14,7 @@ const Header = () => {
 
     return(
         <header className='fixed-top'>
-            <div className='container d-md-flex justify-content-between p-4'>
+            <div className='container d-md-flex justify-content-between p-3'>
                 <div className='d-flex justify-content-between align-items-center'>
                     <div className='h4'>
                         Werkn
