@@ -4,13 +4,20 @@
 /* font-family: 'Lato', sans-serif;
 font-family: 'Poppins', sans-serif */;
 :root{
-	--color1: #06941E;
-	--color2: #2EFF51;
-	--color3: #12E034;
-	--color4: #94001E;
-	--color5: #E0123C;
-    --color6: #090839;
+    --Forest-Green: rgb(6, 148, 30),
+    --Neon-Green: rgb(46, 255, 81),
+    --Emerald-Green: rgb(18, 224, 52),
+    --Burgundy: rgb(148, 0, 30),
+    --Crimson: rgb(224, 18, 60),
+    --Midnight-Blue: rgb(9, 8, 57),
+    --Tory-Blue: rgb(48, 67, 143),
+    --Grey-Suit: rgb(149, 148, 161)
 }
+/* 
+    ##################################################
+    Global Styles 
+    ##################################################
+*/
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -25,6 +32,50 @@ body::before {
 .width-50 {
     width: 50%;
 }
+.bg-MB{
+    background-color: rgb(9, 8, 57);
+}
+.bg-Placebo{
+    background-color: #e4e4e7;
+}
+.bg-Foundation-White{
+    background-color: #f0f0ff;
+}
+.text-B {
+    color: rgb(148, 0, 30);
+}
+.text-C {
+    color: rgb(224, 18, 60);
+}
+.text-GS {
+    color: rgb(149, 148, 161);
+}
+.border-right-GS {
+    border-right: 2px solid rgb(149, 148, 161);
+}
+.border-right-C {
+    border-right: 2px solid rgb(224, 18, 60);
+}
+/* 
+    ##################################################
+    Header Styles 
+    ##################################################
+*/
+header {
+    background-color: white;
+}
+.navigation a{
+    color: black;
+    transition: color 0.5s;
+}
+.navigation a:hover{
+    color: rgb(224, 18, 60);
+}
+/* 
+    ##################################################
+    Showcase Styles 
+    ##################################################
+*/
 .showcase-wrapper {
     height: 100vh;
     background: url('../img/black_laptop.jpg') no-repeat;
@@ -33,11 +84,16 @@ body::before {
 }
 .btn-quote {
     padding: 8px 54px;
-    border: 2px solid red;
+    border: 2px solid rgb(224, 18, 60);
     border-radius: 30px;
     font-size: 20px;
     letter-spacing: 3px;;
 }
+/* 
+    ##################################################
+    Header Styles 
+    ##################################################
+*/
 .menu, .cross {
     display: none;
     cursor: pointer
@@ -67,20 +123,37 @@ body::before {
 .arrow-left img, .arrow-right img{
     width: 20px;
 }
-
-.form-wrapper input[type='text'], input[type='email'], textarea {
+/* 
+    ##################################################
+    Form Styles 
+    ##################################################
+*/
+.form-wrapper .form-group input[type='text'], input[type='email'], textarea {
     display: block;
     width: 100%;
     padding: 10px;
     border: none;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid rgb(149, 148, 161);
     outline: none;
+    transition: border-color 0.7s;
+}
+.form-wrapper .form-group:focus-within label{
+    color: rgb(224, 18, 60);
+}
+.form-wrapper .form-group:focus-within input[type='text'], input[type='email'], textarea:focus {
+    border-bottom-color: rgb(224, 18, 60);
 }
 textarea {
     resize: none;
+    height: 150px;
 }
+/* 
+    ##################################################
+    Footer Styles 
+    ##################################################
+*/
 footer {
-    background-color: var(--color6);
+    background-color: rgb(9, 8, 57);
 }
 footer ul{
     padding: 0;
@@ -91,19 +164,53 @@ footer li{
 }
 footer a {
     text-decoration: none;
-    color: var(--color5);
+    color: white;
+    transition: color 0.5s;
+}
+footer a:hover {
+    color: rgb(224, 18, 60);
 }
 footer input{
     width: 100%;
     padding: 8px 24px;
+     border-radius: 6px;
 }
+footer input[type='email']{
+    border: 1.5px solid rgb(224, 18, 60);
+}
+footer input[type='submit']{
+    background-color: rgb(224, 18, 60);
+    color: white;
+    border: none;
+}
+/* 
+    ##################################################
+    Responsive Styles 
+    ##################################################
+*/
 @media screen and (max-width: 789px) {
+    /* 
+        ##################################################
+        Global Styles 
+        ##################################################
+    */
     .width-60 {
         width: 100%;
     }
     .width-50{
         width: 100%;
     }
+    .border-right-GS {
+        border-right: none;
+    }
+    .border-right-C {
+        border-right: none;
+    }
+    /* 
+        ##################################################
+        Showcase Styles 
+        ##################################################
+    */
     .showcase-wrapper {
         height: auto;
         padding-top: 100px!important;
@@ -112,9 +219,11 @@ footer input{
         padding: 8px 46px;
         margin-bottom: 20px;
     }
-    header {
-        background-color: white;
-    }
+    /* 
+        ##################################################
+        Header Styles 
+        ##################################################
+    */
     .navigation ul{
         margin-top: 150px;
         padding: 0;
