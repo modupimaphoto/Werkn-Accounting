@@ -2,19 +2,25 @@ const Footer = () => {
 
     return(
         <>
-            <div className='container'>
+            <div className='container text-white'>
                 <div className='d-block d-md-flex justify-content-evenly p-3'>
                     <div>
                         <h5>Connect with us</h5>
                         <ul>
                             <li>
-                                <a href="#">Facebook</a>
+                                <a href="#">
+                                    <i className="fa-brands fa-facebook"></i> Facebook
+                                </a>
                             </li>
                             <li>
-                                <a href="#">Instagram</a>
+                                <a href="#">
+                                    <i className="fa-brands fa-instagram"></i> Instagram
+                                </a>
                             </li>
                             <li>
-                                <a href="#">Twitter</a>
+                                <a href="#">
+                                    <i className="fa-brands fa-twitter"></i> Twitter
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -39,7 +45,7 @@ const Footer = () => {
                         <h5>Subscribe To Newsletters</h5>
                         <form>
                             <div className="form-group mb-2">
-                                <input type='text' placeholder="Your email address" />
+                                <input type='email' placeholder="Your email address" />
                             </div>
                             <div className="form-group">
                                 <input type='submit' value='Subscribe' />
