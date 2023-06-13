@@ -38,8 +38,14 @@ body::before {
 .bg-Placebo{
     background-color: #e4e4e7;
 }
+.bg-lightgray{
+    background-color: lightgray;
+}
 .bg-Foundation-White{
     background-color: #f0f0ff;
+}
+.text-EG {
+    color: rgb(18, 224, 52);
 }
 .text-B {
     color: rgb(148, 0, 30);
@@ -84,10 +90,18 @@ header {
 }
 .btn-quote {
     padding: 8px 54px;
-    border: 2px solid rgb(224, 18, 60);
+    border: none;
     border-radius: 30px;
     font-size: 20px;
-    letter-spacing: 3px;;
+    letter-spacing: 2px;
+    background: linear-gradient(to right, rgb(224, 18, 60), rgb(148, 0, 30));
+    color: white;
+}
+.slogan {
+    background: linear-gradient(to right, rgb(224, 18, 60), rgb(148, 0, 30));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent
 }
 /* 
     ##################################################
@@ -146,6 +160,16 @@ header {
 textarea {
     resize: none;
     height: 150px;
+}
+.form-wrapper input[type='submit'] {
+    padding: 10px 76px;
+    color: white;
+    background: linear-gradient(to bottom, rgb(224, 18, 60), rgb(148, 0, 30));
+    border: none;
+    border-radius: 8px;
+}
+.form-wrapper input[type='submit']:hover {
+    background: linear-gradient(to top, rgb(224, 18, 60), rgb(148, 0, 30));
 }
 /* 
     ##################################################
@@ -217,7 +241,7 @@ footer input[type='submit']{
     }
     .btn-quote {
         padding: 8px 46px;
-        margin-bottom: 20px;
+        margin-bottom: 100px;
     }
     /* 
         ##################################################
