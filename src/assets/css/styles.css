@@ -1,9 +1,9 @@
 
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
 /* font-family: 'Lato', sans-serif;
-font-family: 'Poppins', sans-serif */;
-:root{
+font-family: 'Poppins', sans-serif 
+
     --Forest-Green: rgb(6, 148, 30),
     --Neon-Green: rgb(46, 255, 81),
     --Emerald-Green: rgb(18, 224, 52),
@@ -12,7 +12,7 @@ font-family: 'Poppins', sans-serif */;
     --Midnight-Blue: rgb(9, 8, 57),
     --Tory-Blue: rgb(48, 67, 143),
     --Grey-Suit: rgb(149, 148, 161)
-}
+*/;
 /* 
     ##################################################
     Global Styles 
@@ -31,6 +31,18 @@ body::before {
 }
 .width-50 {
     width: 50%;
+}
+.bg-light-blue {
+    background-color: #d0efff;
+}
+.bg-blue{
+    background-color: #006ee6;
+}
+.bg-vampire-black {
+    background-color: #0F0404;
+}
+.text-platinum {
+    color: #E5E1E6;
 }
 .bg-MB{
     background-color: rgb(9, 8, 57);
@@ -147,7 +159,8 @@ header {
     width: 100%;
     padding: 10px;
     border: none;
-    border-bottom: 2px solid rgb(149, 148, 161);
+    border-radius: 6px;
+    border-bottom: 2px solid #E5E1E6;
     outline: none;
     transition: border-color 0.7s;
 }
@@ -255,7 +268,6 @@ footer input[type='submit']{
     }
     .navigation {
         background-color: white;
-        box-shadow: -300px 0 0 rgb(0, 0, 0, 0.8);
         position: fixed;
         top: 0;
         right: 0;
