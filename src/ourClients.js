@@ -48,7 +48,7 @@ const OurClients = () => {
                 <span className='arrow-right' onClick={ nextReview }>
                     <img src={ arrow_right} alt="arrow right"/>
                 </span>
-                <p className='h4 fw-light mb-3'>
+                <p className='h5 fw-normal mb-3'>
                    { clients[reviewCount]['review'] }
                 </p>
                 <h6 className="text-C">
