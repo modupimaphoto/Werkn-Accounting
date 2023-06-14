@@ -4,7 +4,7 @@ const Footer = () => {
         <>
             <div className='container text-white'>
                 <div className='d-block d-md-flex justify-content-evenly p-3'>
-                    <div>
+                    <div className='mb-3'>
                         <h5>Connect with us</h5>
                         <ul>
                             <li>
@@ -24,7 +24,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div>
+                    <div className='mb-3'>
                         <h5>Quick Links</h5>
                         <ul>
                             <li>
