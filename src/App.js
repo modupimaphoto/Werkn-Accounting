@@ -11,41 +11,41 @@ const App = () => {
 		<>	<Header />
 			<div className='showcase-wrapper text-center p-3 p-md-5'>
 				<h1 className='display-3 text-light'>
-					Accounting Solutions You Can <span className='text-EG'>Trust.</span>
+					Accounting Solutions You Can <span className='text-C fw-semibold'>Trust.</span>
 				</h1>
 				<p className='text-center h3 fw-normal p-4 text-white'>
 					Whether you are an individual or a business, local or international, 
 					you need reliable and professional accounting services to manage your finances and taxes. 
 				</p>
-				<p className='h3 mb-5 slogan'>
+				<p className='h3 mb-5 slogan' id='services'>
 					Expertise. Commitment. Value.
 				</p>
 				<button type='button' className='btn-quote text-uppercase'>Get a quote</button>
 			</div>
-			<section className='pt-5 pb-5 bg-Placebo'>
+			<section className='pt-5 pb-5 bg-blue' >
 				<div className='container-fluid'>
 					<div className='row'>
 						<div className='col-md-4 p-4 text-md-center border-right-C'>
-							<h4>
+							<h4 className='text-white'>
 								<span className='text-C'>01.</span> Tax Preparation.
 							</h4>
-							<p className='h5 fw-normal'>
+							<p className='h5 fw-normal text-platinum'>
 								We prepare everything you need for tax return.
 							</p>
 						</div>
 						<div className='col-md-4 p-4 text-md-center border-right-C'>
-							<h4>
+							<h4 className='text-white'>
 								<span className='text-C'>02.</span> Startup Package.
 							</h4>
-							<p className='h5 fw-normal'>
+							<p className='h5 fw-normal text-platinum'>
 								We build financial models you can pitch to your investors.
 							</p>
 						</div>
 						<div className='col-md-4 p-4 text-md-center'>
-							<h4>
+							<h4 className='text-white'>
 								<span className='text-C'>03.</span> Wealth Management.
 							</h4>
-							<p className='h5 fw-normal'>
+							<p className='h5 fw-normal text-platinum'>
 								We deliver thoughtful investment advisory services.
 							</p>
 						</div>
@@ -53,41 +53,39 @@ const App = () => {
 				</div>
 			</section>
 
-			<section className='pt-5'>
+			<section className='pt-5 pb-5 bg-vampire-black'>
 				<div className='container'>
 					<div className='row no-gutters mb-2 g-4'>
-						<div className='col-md-4'>
+						<div className='col-md-5'>
 							<img src={ black_building } alt='black building' className='img-fluid rounded'/>
 						</div>
-						<div className='col-md-8 p-3'>
-							<h2 className='text-EG'>About us</h2>
-							<p className='h5 fw-light'>
+						<div className='col-md-7 p-3'>
+							<h2 className='text-C'>About us.</h2>
+							<p className='h5 fw-normal text-platinum'>
 								Established in 2014, Werkn is full service firm, offering affordable 
 								accounting solutions to individuals and local and international businesses.
 							</p>
-							<p className='h5 fw-light'>
+							<p className='h5 fw-normal text-platinum'>
 								We have a team of qualified and experienced accountants who can handle any accounting task, from bookkeeping and payroll to auditing and tax preparation. 
 								We also use the latest technology and software to ensure accuracy and efficiency in our work
 							</p>
+							<p className='h5 fw-normal text-platinum'>
+								With us, you can focus on your core activities and goals, while we take care of your accounting needs. 
+								You can also enjoy peace of mind knowing that your financial records are in good hands and compliant with the relevant laws and regulations.
+							</p>
 						</div>
-					</div>
-					<div>
-						<p className='h5 fw-light mb-3'>
-							With us, you can focus on your core activities and goals, while we take care of your accounting needs. 
-							You can also enjoy peace of mind knowing that your financial records are in good hands and compliant with the relevant laws and regulations.
-						</p>
 					</div>
 				</div>
 			</section>
-			<section className='pt-5 pb-5'>
+			<section className='pt-5 pb-5 bg-blue' id='pricing'>
 				<div className='container'>
-					<h3 className='text-EG'>
+					<h3 className='text-white'>
 						Services
 					</h3>
-					<p className='h6 p-sm-2 mb-3'>
+					<p className='h6 p-sm-2 mb-3 text-platinum'>
 						At werkn, we believe that accounting should be simple, transparent, and affordable.<br />
 						That’s why we offer flexible pricing plans that suit your needs and budget. <br />
-						<span className="text-C">You can choose from three plans:</span>
+						<span className="fw-semibold text-white">You can choose from three plans:</span>
 					</p>
 					<div className='row g-4'>
 						<div className='col-md-4'>
@@ -152,27 +150,27 @@ const App = () => {
 					</div>
 				</div>
 			</section>
-			<section className='pt-5 pb-5 bg-lightgray'>
+			<section className='pt-5 pb-5 bg-vampire-black'>
 				<div className='container'>
 					<div className='text-center mb-4'>
-						<h3 className='text-uppercase text-EG'>Our testimonials</h3>
-						<p className=' h5 fw-normal'>
+						<h3 className='text-uppercase text-white'>Our testimonials</h3>
+						<p className=' h5 fw-normal text-platinum'>
 							What <span className='h5 text-C'>Customers</span> say...
 						</p>
 					</div>
-					<div className='p-2 mb-4'>
+					<div className='p-1 mb-4'>
 						<OurClients />
 					</div>
 				</div>
 			</section>
 
-			<section>
+			<section className='bg-vampire-black pt-5 pb-5' id='contact'>
 				<div className='container'>
 					<Contact />
 				</div>
 			</section>
 
-			<section className='pt-4 pb-4'>
+			<section className='pt-5 pb-5'>
 				<div className='container p-5 shadow rounded'>
 					<blockquote className='h5 fw-normal'>
 						"Accounting is our expertise. We'll take care for it, so you can focus on yours."
